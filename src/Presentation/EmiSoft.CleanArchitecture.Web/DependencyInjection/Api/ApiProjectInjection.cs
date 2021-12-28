@@ -1,11 +1,15 @@
-﻿using EmiSoft.CleanArchitecture.Application.Filters;
+﻿using EmiSoft.CleanArchitecture.Application;
+using EmiSoft.CleanArchitecture.Application.DependencyInjection.Localization;
+using EmiSoft.CleanArchitecture.Application.Filters;
+using EmiSoft.CleanArchitecture.Infrastructure;
+using EmiSoft.CleanArchitecture.SharedKernel.Resources;
+using EmiSoft.CleanArchitecture.Web.DependencyInjection.Swagger;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using System.Text.Json.Serialization;
 
-namespace EmiSoft.CleanArchitecture.Application.DependencyInjection.Api;
+namespace EmiSoft.CleanArchitecture.Web.DependencyInjection.Api;
 
 public static class ApiProjectInjection
 {
@@ -22,11 +26,18 @@ public static class ApiProjectInjection
                 options.DisableDataAnnotationsValidation = true;
                 options.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             })
+            .AddDataAnnotationsLocalization(options =>
+             {
+                 options.DataAnnotationLocalizerProvider = (type, factory) =>
+                 factory.Create(typeof(SharedResources));
+             })
             .ConfigureApiBehaviorOptions(options =>
             {
                 options.SuppressModelStateInvalidFilter = true;
             })
             .AddJsonOptions(options => options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull);
+
+        services.AddSwaggerDocumentation();
 
         services.AddCors();
 
@@ -42,11 +53,16 @@ public static class ApiProjectInjection
             config.AssumeDefaultVersionWhenUnspecified = true;
             config.ReportApiVersions = true;
         });
+
         services.AddHttpContextAccessor();
 
         services.AddHttpClient();
 
         services.AddOptions();
+
+        services.AddLocalizationInjection();
+
+        services.AddInfrastructure(configuration);
 
         services.AddApplication(configuration);
 

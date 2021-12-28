@@ -1,15 +1,14 @@
 ﻿using EmiSoft.CleanArchitecture.Application.Filters;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using Swashbuckle.AspNetCore.SwaggerUI;
+using System.Reflection;
 
-namespace EmiSoft.CleanArchitecture.Application.DependencyInjection.Swagger;
+namespace EmiSoft.CleanArchitecture.Web.DependencyInjection.Swagger;
 
 public static class SwaggerInjection
 {
-    public static IServiceCollection AddSwaggerDocumentation(this IServiceCollection services, string assemblyName)
+    public static IServiceCollection AddSwaggerDocumentation(this IServiceCollection services)
     {
         services.AddSwaggerGen(c =>
         {
@@ -48,7 +47,7 @@ public static class SwaggerInjection
               }
             });
 
-            IncludeXmlComments(assemblyName, c);
+            IncludeXmlComments(Assembly.GetExecutingAssembly().GetName().Name, c);
 
             c.CustomSchemaIds(x => x.FullName);
         });
