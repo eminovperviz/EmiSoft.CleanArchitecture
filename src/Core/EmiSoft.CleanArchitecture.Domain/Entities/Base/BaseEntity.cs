@@ -4,13 +4,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EmiSoft.CleanArchitecture.Domain.Entity;
 
-public abstract class BaseEntity<T> : BaseEntity, IEntity, ISoftDelete
+public abstract class BaseEntity<T> : BaseEntity, IEntity
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public virtual T Id { get; set; }
-
-    public bool IsDeleted { get; set; } = true;
 }
 
 
