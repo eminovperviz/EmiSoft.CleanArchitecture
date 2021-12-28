@@ -11,6 +11,29 @@ A starting point for Clean Architecture with ASP.NET Core. [Clean Architecture](
   * [The Infrastructure Project](#the-infrastructure-project)
   * [The Web Project](#the-web-project)  
 
+
+## Features and Technologies
+ - Onion Architecture
+ - Entity Framework Core - Code First
+ - Repository Pattern - Generic
+ - Serilog
+ - Swagger UI
+ - Healthchecks
+ - Pagination      
+ - Database Seeding
+ - Globalization
+ - Localization
+ - FluenValidaiton Localization
+ - Global Api Exception Filter
+ - Global Api Validation Filter
+ - API Versioning
+ - Fluent Validation
+ - AutoMapper
+ - SMTP / Email Service 
+ - Audit Implementation
+ - Containerization (Docker Support)
+ 
+
 ## Give a Star! :star:
 If you like or are using this project to learn or start your solution, please give it a star. Thanks!
  
