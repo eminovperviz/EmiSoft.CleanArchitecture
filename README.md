@@ -16,7 +16,7 @@ If you like or are using this project to learn or start your solution, please gi
  
 ## Versions
 
-The master branch is now using .NET 6. If you need a previous version use one of these tagged commits:
+The master branch is now using .NET 6.
 
 # Design Decisions and Dependencies
 
