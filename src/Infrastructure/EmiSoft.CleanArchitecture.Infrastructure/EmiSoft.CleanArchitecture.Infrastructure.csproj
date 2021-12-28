@@ -15,12 +15,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Configurations\" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<ProjectReference Include="..\EmiSoft.CleanArchitecture.Application\EmiSoft.CleanArchitecture.Application.csproj" />
-		<ProjectReference Include="..\EmiSoft.CleanArchitecture.Domain\EmiSoft.CleanArchitecture.Domain.csproj" />
+	  <ProjectReference Include="..\..\Core\EmiSoft.CleanArchitecture.Application\EmiSoft.CleanArchitecture.Application.csproj" />
+	  <ProjectReference Include="..\EmiSoft.CleanArchitecture.Infrastructure.Persistence\EmiSoft.CleanArchitecture.Infrastructure.Persistence.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmiSoft.CleanArchitecture.Web", "src\EmiSoft.CleanArchitecture.Web\EmiSoft.CleanArchitecture.Web.csproj", "{FFA848B9-2E87-4567-9CF2-11CCAC05AEA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmiSoft.CleanArchitecture.Web", "src\Presentation\EmiSoft.CleanArchitecture.Web\EmiSoft.CleanArchitecture.Web.csproj", "{FFA848B9-2E87-4567-9CF2-11CCAC05AEA3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{6553A001-0A0B-442B-B76F-CECB5DD1772E}"
 EndProject
@@ -11,20 +11,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{59B0EEBD-0CDB-4531-817D-9C4B9A16B0A2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmiSoft.CleanArchitecture.Application", "src\EmiSoft.CleanArchitecture.Application\EmiSoft.CleanArchitecture.Application.csproj", "{FF6424D0-615D-4077-8B98-4FA9925598D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmiSoft.CleanArchitecture.Application", "src\Core\EmiSoft.CleanArchitecture.Application\EmiSoft.CleanArchitecture.Application.csproj", "{FF6424D0-615D-4077-8B98-4FA9925598D6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmiSoft.CleanArchitecture.Domain", "src\EmiSoft.CleanArchitecture.Domain\EmiSoft.CleanArchitecture.Domain.csproj", "{C45FE4FB-5529-4C02-9DA9-DAFB949E4877}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmiSoft.CleanArchitecture.Domain", "src\Core\EmiSoft.CleanArchitecture.Domain\EmiSoft.CleanArchitecture.Domain.csproj", "{C45FE4FB-5529-4C02-9DA9-DAFB949E4877}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmiSoft.CleanArchitecture.Infrastructure", "src\EmiSoft.CleanArchitecture.Infrastructure\EmiSoft.CleanArchitecture.Infrastructure.csproj", "{4BF71810-A852-4768-B163-CB4A6570E664}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmiSoft.CleanArchitecture.Infrastructure", "src\Infrastructure\EmiSoft.CleanArchitecture.Infrastructure\EmiSoft.CleanArchitecture.Infrastructure.csproj", "{4BF71810-A852-4768-B163-CB4A6570E664}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmiSoft.CleanArchitecture.SharedKernel", "src\EmiSoft.CleanArchitecture.SharedKernel\EmiSoft.CleanArchitecture.SharedKernel.csproj", "{14B1ED82-1BF6-4143-9EE5-A88B76C3C38F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmiSoft.CleanArchitecture.SharedKernel", "src\Shared\EmiSoft.CleanArchitecture.SharedKernel\EmiSoft.CleanArchitecture.SharedKernel.csproj", "{14B1ED82-1BF6-4143-9EE5-A88B76C3C38F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{19E3022C-0823-443E-80F0-B91346D2FB3B}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{EE18B1EF-A882-4275-AD42-F6E63F39ABCE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{F999501B-4404-41D6-9C71-0FBE58FCAC68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmiSoft.CleanArchitecture.Infrastructure.Persistence", "src\Infrastructure\EmiSoft.CleanArchitecture.Infrastructure.Persistence\EmiSoft.CleanArchitecture.Infrastructure.Persistence.csproj", "{C32FC3E0-4B14-4284-8CDD-A3AF05B41D32}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{3B9C1F48-3932-4D61-8D8B-3DD6D12BC6AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,10 +56,14 @@ Global
 		{14B1ED82-1BF6-4143-9EE5-A88B76C3C38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14B1ED82-1BF6-4143-9EE5-A88B76C3C38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14B1ED82-1BF6-4143-9EE5-A88B76C3C38F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE18B1EF-A882-4275-AD42-F6E63F39ABCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE18B1EF-A882-4275-AD42-F6E63F39ABCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE18B1EF-A882-4275-AD42-F6E63F39ABCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE18B1EF-A882-4275-AD42-F6E63F39ABCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C32FC3E0-4B14-4284-8CDD-A3AF05B41D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C32FC3E0-4B14-4284-8CDD-A3AF05B41D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C32FC3E0-4B14-4284-8CDD-A3AF05B41D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C32FC3E0-4B14-4284-8CDD-A3AF05B41D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B9C1F48-3932-4D61-8D8B-3DD6D12BC6AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B9C1F48-3932-4D61-8D8B-3DD6D12BC6AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B9C1F48-3932-4D61-8D8B-3DD6D12BC6AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B9C1F48-3932-4D61-8D8B-3DD6D12BC6AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,7 +73,8 @@ Global
 		{FF6424D0-615D-4077-8B98-4FA9925598D6} = {6553A001-0A0B-442B-B76F-CECB5DD1772E}
 		{C45FE4FB-5529-4C02-9DA9-DAFB949E4877} = {6553A001-0A0B-442B-B76F-CECB5DD1772E}
 		{4BF71810-A852-4768-B163-CB4A6570E664} = {FC9A9233-FBD1-4714-A4B0-75F0E919166E}
-		{14B1ED82-1BF6-4143-9EE5-A88B76C3C38F} = {FC9A9233-FBD1-4714-A4B0-75F0E919166E}
+		{14B1ED82-1BF6-4143-9EE5-A88B76C3C38F} = {F999501B-4404-41D6-9C71-0FBE58FCAC68}
+		{C32FC3E0-4B14-4284-8CDD-A3AF05B41D32} = {FC9A9233-FBD1-4714-A4B0-75F0E919166E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7BF3C935-CA7D-4E9C-8BA9-CD25A667A78F}

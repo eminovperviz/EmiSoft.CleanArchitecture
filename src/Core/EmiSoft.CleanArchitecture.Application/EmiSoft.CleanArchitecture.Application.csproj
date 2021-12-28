@@ -18,9 +18,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\EmiSoft.CleanArchitecture.Domain\EmiSoft.CleanArchitecture.Domain.csproj" />
-		<ProjectReference Include="..\EmiSoft.CleanArchitecture.SharedKernel\EmiSoft.CleanArchitecture.SharedKernel.csproj" />
 		<PackageReference Include="Z.EntityFramework.Plus.EF6" Version="6.13.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Shared\EmiSoft.CleanArchitecture.SharedKernel\EmiSoft.CleanArchitecture.SharedKernel.csproj" />
+	  <ProjectReference Include="..\EmiSoft.CleanArchitecture.Domain\EmiSoft.CleanArchitecture.Domain.csproj" />
 	</ItemGroup>
 
 </Project>

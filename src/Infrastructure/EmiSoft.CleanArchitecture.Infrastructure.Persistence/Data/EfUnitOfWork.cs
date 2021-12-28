@@ -1,7 +1,7 @@
 ﻿using EmiSoft.CleanArchitecture.Application.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace EmiSoft.CleanArchitecture.Infrastructure.Data;
+namespace EmiSoft.CleanArchitecture.Infrastructure.Persistence.Data;
 
 public class EfUnitOfWork : IUnitOfWork
 {

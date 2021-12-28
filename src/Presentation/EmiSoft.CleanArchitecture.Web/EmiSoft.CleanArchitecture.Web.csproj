@@ -8,7 +8,7 @@
 		<DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
 		<UserSecretsId>643c5438-1357-45ae-9b15-89cc795cf3c2</UserSecretsId>
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-		<DockerfileContext>..\..</DockerfileContext>
+		<DockerfileContext>..\..\..</DockerfileContext>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -22,8 +22,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\EmiSoft.CleanArchitecture.Application\EmiSoft.CleanArchitecture.Application.csproj" />
-	  <ProjectReference Include="..\EmiSoft.CleanArchitecture.Infrastructure\EmiSoft.CleanArchitecture.Infrastructure.csproj" />
+	  <ProjectReference Include="..\..\Core\EmiSoft.CleanArchitecture.Application\EmiSoft.CleanArchitecture.Application.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\EmiSoft.CleanArchitecture.Infrastructure\EmiSoft.CleanArchitecture.Infrastructure.csproj" />
+	  <ProjectReference Include="..\..\Shared\EmiSoft.CleanArchitecture.SharedKernel\EmiSoft.CleanArchitecture.SharedKernel.csproj" />
 	</ItemGroup>
 
 </Project>

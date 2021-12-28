@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace EmiSoft.CleanArchitecture.Infrastructure.Extensions;
+namespace EmiSoft.CleanArchitecture.Infrastructure.Persistence.Extensions;
 
 public static class SeedData
 {

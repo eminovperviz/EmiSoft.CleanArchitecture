@@ -1,11 +1,9 @@
-version: '3.4'
-
-services:
+ services:
   emisoft.cleanarchitecture.web:
     image: ${DOCKER_REGISTRY-}emisoftcleanarchitectureweb
     build:
       context: .
-      dockerfile: src/EmiSoft.CleanArchitecture.Web/Dockerfile
+      dockerfile: src/Presentation/EmiSoft.CleanArchitecture.Web/Dockerfile
 
   mssql:
     image: mcr.microsoft.com/mssql/server:2019-latest
@@ -19,12 +17,11 @@ services:
   #kibana:
   #  image: docker.elastic.co/kibana/kibana:7.9.2
 
-
-volumes:
+ volumes:
   mssql_data:
   #elasticsearch_data:
   #rabbitmq_data:
 
-networks:
+ networks:
   edmsnetwork:
     driver: bridge

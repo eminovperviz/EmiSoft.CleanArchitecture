@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Reflection;
 
-namespace EmiSoft.CleanArchitecture.Infrastructure.Extensions;
+namespace EmiSoft.CleanArchitecture.Infrastructure.Persistence.Extensions;
 /// <summary>
 /// Original: https://stackoverflow.com/a/47263024/13729
 /// </summary>

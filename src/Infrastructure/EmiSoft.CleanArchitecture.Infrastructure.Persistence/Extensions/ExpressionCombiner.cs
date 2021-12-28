@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace EmiSoft.CleanArchitecture.Infrastructure.Extensions;
+namespace EmiSoft.CleanArchitecture.Infrastructure.Persistence.Extensions;
 
 public static class ExpressionCombiner
 {

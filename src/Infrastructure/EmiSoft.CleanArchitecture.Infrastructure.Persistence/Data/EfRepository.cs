@@ -3,7 +3,7 @@ using EmiSoft.CleanArchitecture.SharedKernel.Utility;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace EmiSoft.CleanArchitecture.Infrastructure.Data;
+namespace EmiSoft.CleanArchitecture.Infrastructure.Persistence.Data;
 
 public class EfRepository<T> : IRepository<T> where T : class
 {

@@ -1,13 +1,13 @@
 ﻿using EmiSoft.CleanArchitecture.Application.Interfaces;
 using EmiSoft.CleanArchitecture.Domain.Interfaces;
-using EmiSoft.CleanArchitecture.Infrastructure.Extensions;
+using EmiSoft.CleanArchitecture.Infrastructure.Persistence.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using System.Data;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace EmiSoft.CleanArchitecture.Infrastructure.Data;
+namespace EmiSoft.CleanArchitecture.Infrastructure.Persistence.Data;
 
 public class AppDbContext : DbContext
 {

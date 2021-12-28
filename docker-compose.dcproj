@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>ee18b1ef-a882-4275-ad42-f6e63f39abce</ProjectGuid>
+    <ProjectGuid>3b9c1f48-3932-4d61-8d8b-3dd6d12bc6aa</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>emisoft.cleanarchitecture.web</DockerServiceName>

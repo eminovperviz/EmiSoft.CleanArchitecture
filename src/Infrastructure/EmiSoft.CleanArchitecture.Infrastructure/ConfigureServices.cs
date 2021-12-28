@@ -1,10 +1,9 @@
 ﻿using EmiSoft.CleanArchitecture.Application.Interfaces;
 using EmiSoft.CleanArchitecture.Application.Interfaces.Email;
 using EmiSoft.CleanArchitecture.Application.Models.Config;
-using EmiSoft.CleanArchitecture.Infrastructure.Data;
+using EmiSoft.CleanArchitecture.Infrastructure.Persistence;
 using EmiSoft.CleanArchitecture.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -14,22 +13,16 @@ namespace EmiSoft.CleanArchitecture.Infrastructure;
 
 public static class ConfigureServices
 {
-
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
-        services.Configure<EmailConfig>(configuration.GetSection("EmailConfig"));
 
-        string connectionString = configuration.GetConnectionString("SqlServer");
-        services.AddDbContext<AppDbContext>(options =>
-            options.UseSqlServer(connectionString)
-        );
+        services.Configure<EmailConfig>(configuration.GetSection("EmailConfig"));
+       
         services.AddSingleton<IJwtService, JwtService>();
         services.AddScoped<ICurrentUserService, CurrentUserService>();
         services.AddSingleton<IEmailSenderService, EmailSenderService>();
 
-        services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
-        services.AddScoped(typeof(IUnitOfWork), typeof(EfUnitOfWork));
-
+        services.AddInfrastructurePersistence(configuration);
         JwtTokenConfiguration(services, configuration);
 
         #region Repositories
