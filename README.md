@@ -2,6 +2,9 @@
 
 A starting point for Clean Architecture with ASP.NET Core. [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) is just the latest in a series of names for the same loosely-coupled, dependency-inverted architecture. You will also find it named [hexagonal](http://alistair.cockburn.us/Hexagonal+architecture), [ports-and-adapters](http://www.dossier-andreas.net/software_architecture/ports_and_adapters.html), or [onion architecture](http://jeffreypalermo.com/blog/the-onion-architecture-part-1/).
 
+## Give a Star! :star:
+If you like or are using this project to learn or start your solution, please give it a star. Thanks!
+
 ## Table Of Contents
   
 - [Design Decisions and Dependencies](#design-decisions-and-dependencies)
@@ -23,7 +26,7 @@ A starting point for Clean Architecture with ASP.NET Core. [Clean Architecture](
  - Database Seeding
  - Globalization
  - Localization
- - FluenValidaiton Localization
+ - FluentValidation Localization
  - Global Api Exception Filter
  - Global Api Validation Filter
  - API Versioning
@@ -32,10 +35,6 @@ A starting point for Clean Architecture with ASP.NET Core. [Clean Architecture](
  - SMTP / Email Service 
  - Audit Implementation
  - Containerization (Docker Support)
- 
-
-## Give a Star! :star:
-If you like or are using this project to learn or start your solution, please give it a star. Thanks!
  
 ## Versions
 
@@ -70,3 +69,5 @@ The Infrastructure project depends on `Microsoft.EntityFrameworkCore.SqlServer`.
 ## The Web Project
 
 The entry point of the application is the ASP.NET Core Web API project. This is actually a console application, with  `Program.cs` Minimal API implementation. It currently uses the default  ASP.NET Core API project template code. This includes its configuration system, which uses the default `appsettings.json` file plus environment variables and configured services. The project delegates to the `Infrastructure` project.
+
+
