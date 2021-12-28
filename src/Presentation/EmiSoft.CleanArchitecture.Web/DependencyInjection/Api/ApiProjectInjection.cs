@@ -1,8 +1,8 @@
 ﻿using EmiSoft.CleanArchitecture.Application;
-using EmiSoft.CleanArchitecture.Application.DependencyInjection.Localization;
 using EmiSoft.CleanArchitecture.Application.Filters;
 using EmiSoft.CleanArchitecture.Infrastructure;
 using EmiSoft.CleanArchitecture.SharedKernel.Resources;
+using EmiSoft.CleanArchitecture.Web.DependencyInjection.Localization;
 using EmiSoft.CleanArchitecture.Web.DependencyInjection.Swagger;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;

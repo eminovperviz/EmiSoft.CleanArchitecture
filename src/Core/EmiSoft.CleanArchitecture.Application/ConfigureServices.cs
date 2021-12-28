@@ -1,5 +1,4 @@
-﻿using EmiSoft.CleanArchitecture.Application.DependencyInjection.Localization;
-using EmiSoft.CleanArchitecture.Application.Interfaces;
+﻿using EmiSoft.CleanArchitecture.Application.Interfaces;
 using EmiSoft.CleanArchitecture.Application.Services;
 using FluentValidation;
 using Microsoft.Extensions.Configuration;
@@ -11,8 +10,6 @@ public static class ConfigureServices
 {
     public static IServiceCollection AddApplication(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddLocalizationInjection();
-
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
