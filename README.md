@@ -27,14 +27,16 @@ The goal of this sample is to provide a fairly bare-bones starter kit for new pr
 The Core layer is the center of the Clean Architecture design, and all other project dependencies should point toward it. As such, it has very few external dependencies. 
 The Core layer contains The Application Project and The Domain Project. The Core layer should include things like:
 
-- Entities 
-- DTOs
-- Interfaces  
-- Services
+## The Domain Project
+This will contain all entities, enums, exceptions, interfaces, types and logic specific to the domain layer.
+
+## The Application Project
+
+This layer contains all application logic. It is dependent on the domain layer, but has no dependencies on any other layer or project. This layer defines interfaces that are implemented by outside layers. For example, if the application need to access a notification service, a new interface would be added to application and an implementation would be created within infrastructure.
 
 ## The SharedKernel Project
 
-Many solutions will also reference a separate **Shared Kernel** project/package. I recommend creating a separate SharedKernel project and solution if you will require sharing code between multiple [bounded contexts](https://ardalis.com/encapsulation-boundaries-large-and-small/) (see [DDD Fundamentals](https://www.pluralsight.com/courses/domain-driven-design-fundamentals)). I further recommend this be published as a NuGet package (most likely privately within your organization) and referenced as a NuGet dependency by those projects that require it. For this sample, in the interest of simplicity, I've added a SharedKernel project to the solution. It contains types that would likely be shared between multiple bounded contexts (VS solutions, typically), in my experience. 
+Many solutions will also reference a separate **Shared Kernel** project/package. I recommend creating a separate SharedKernel project and solution if you will require sharing code between other modules. I further recommend this be published as a NuGet package (most likely privately within your organization) and referenced as a NuGet dependency by those projects that require it. For this sample, in the interest of simplicity, I've added a SharedKernel project to the solution. It contains types that would likely be shared between multiple modules (VS solutions, typically), in my experience. 
 
 ## The Infrastructure Project
 
