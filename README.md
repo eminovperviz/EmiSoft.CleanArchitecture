@@ -49,7 +49,7 @@ The goal of this sample is to provide a fairly bare-bones starter kit for new pr
 ## The Core Layer
 
 The Core layer is the center of the Clean Architecture design, and all other project dependencies should point toward it. As such, it has very few external dependencies. 
-The Core layer contains The Application Project and The Domain Project. The Core layer should include things like:
+The Core layer contains The Application Project and The Domain Project.
 
 ## The Domain Project
 This will contain all entities, enums, exceptions, interfaces, types and logic specific to the domain layer.
@@ -60,7 +60,7 @@ This layer contains all application logic. It is dependent on the domain layer, 
 
 
 ## The Infrastructure Layer
-The Infrastructure Project and The Persistence Project. The Infrastructure layer should include things like:
+The Infrastructure Project and The Persistence Project.
 
 ## The Infrastructure Project
 
