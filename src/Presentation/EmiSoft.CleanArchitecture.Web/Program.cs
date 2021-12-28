@@ -1,5 +1,6 @@
 using EmiSoft.CleanArchitecture.Application.DependencyInjection.Api;
 using EmiSoft.CleanArchitecture.Application.DependencyInjection.Swagger;
+using EmiSoft.CleanArchitecture.Infrastructure;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
@@ -10,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddSwaggerDocumentation(Assembly.GetExecutingAssembly().GetName().Name);
-//builder.Services.AddLoggerDependency(Configuration);
+builder.Services.AddInfrastructure(builder.Configuration);
 builder.Services.AddApiProjectInjection(builder.Configuration);
 builder.Services.AddHealthChecks().AddSqlServer(builder.Configuration["ConnectionStrings:SqlServer"]);
 

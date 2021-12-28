@@ -49,6 +49,7 @@ public static class ApiProjectInjection
         services.AddOptions();
 
         services.AddApplication(configuration);
+
         return services;
     }
 }
