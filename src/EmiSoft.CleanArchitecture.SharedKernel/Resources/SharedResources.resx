@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BindError" xml:space="preserve">
+    <value>Məlumat əskikliyinə görə xəta baş verdi.</value>
+  </data>
+  <data name="CreditCardValidator" xml:space="preserve">
+    <value>{PropertyName} dəyəri, kart nömrəsi formatına uyğun deyil.</value>
+  </data>
+  <data name="DbException" xml:space="preserve">
+    <value>Məlumat bazası ilə mübadilə xətası</value>
+  </data>
+  <data name="DuplicateKeyException" xml:space="preserve">
+    <value>Təkrarlanan məlumat xətası</value>
+  </data>
+  <data name="EmailValidator" xml:space="preserve">
+    <value>{PropertyName} dəyəri, düzgün email formatında deyil.</value>
+  </data>
+  <data name="EqualValidator" xml:space="preserve">
+    <value>{PropertyName} dəyəri '{PropertyValue}'  dəyərinə bərabər olmalıdır.</value>
+  </data>
+  <data name="Exception" xml:space="preserve">
+    <value>Xəta baş verdi.</value>
+  </data>
+  <data name="Failure" xml:space="preserve">
+    <value>Əməliyyat uğursuz oldu</value>
+  </data>
+  <data name="FileContentIsEmpty" xml:space="preserve">
+    <value>Faylın məzmunu boşdur.</value>
+  </data>
+  <data name="FileNotFound" xml:space="preserve">
+    <value>Fayl tapılmadı.</value>
+  </data>
+  <data name="FileNotSave" xml:space="preserve">
+    <value>Fayl yadda saxlanılmadı.</value>
+  </data>
+  <data name="FileReadError" xml:space="preserve">
+    <value>Faylı oxuma zamanı xəta baş verdi.</value>
+  </data>
+  <data name="ForeignKeyException" xml:space="preserve">
+    <value>Foreign Key xətası</value>
+  </data>
+  <data name="GreaterThanValidator" xml:space="preserve">
+    <value>{PropertyName} dəyəri '{ComparisonValue}' dəyərindən böyük olmalıdır.</value>
+  </data>
+  <data name="IdNotExists" xml:space="preserve">
+    <value>{0} - əlaqəli dəyər yoxdur</value>
+  </data>
+  <data name="IncorrectSyntax" xml:space="preserve">
+    <value>Məlumat bazası ilə mübadilə xətası.Sintaksis düzgün deyil.</value>
+  </data>
+  <data name="InvalidPassword" xml:space="preserve">
+    <value>Şifrə səhvdir.</value>
+  </data>
+  <data name="LengthValidator" xml:space="preserve">
+    <value>{PropertyName} dəyərinin uzunluğu {MinLength} və {MaxLength} aralığında olmalıdır. Sizin daxil etdiyiniz uzunluq - {TotalLength}.</value>
+  </data>
+  <data name="LessThanValidator" xml:space="preserve">
+    <value>{PropertyName} dəyəri '{ComparisonValue}' dəyərindən kiçik olmalıdır.</value>
+  </data>
+  <data name="LoadResultError" xml:space="preserve">
+    <value>Axtarış filtrlərində xəta var.</value>
+  </data>
+  <data name="Locked" xml:space="preserve">
+    <value>Hesab bloklanıb.</value>
+  </data>
+  <data name="MaxLengthValidator" xml:space="preserve">
+    <value>{PropertyName} dəyərinin uzunluğu maksimum {MaxLength} olmalıdır.Sizin daxil etdiyiniz uzunluq - {TotalLength}.</value>
+  </data>
+  <data name="MinLengthValidator" xml:space="preserve">
+    <value>{PropertyName} dəyərinin uzunluğu minimum {MinLength} olmalıdır.Sizin daxil etdiyiniz uzunluq - {TotalLength}.</value>
+  </data>
+  <data name="MoreColumnCount" xml:space="preserve">
+    <value>Sütun sayı sorğu tipinə uyğun deyil.</value>
+  </data>
+  <data name="NoContent" xml:space="preserve">
+    <value>Bu URL-də heç bir məlumat yoxdur.</value>
+  </data>
+  <data name="NoPermission" xml:space="preserve">
+    <value>Bu əməliyyatı aparmaq üçün icazəniz yoxdur.</value>
+  </data>
+  <data name="NotEmptyValidator" xml:space="preserve">
+    <value>{PropertyName} dəyəri boş olmamalıdır.</value>
+  </data>
+  <data name="NotEqualValidator" xml:space="preserve">
+    <value>{PropertyName} dəyəri  '{PropertyValue}' dəyərinə bərabər olmalı deyil.</value>
+  </data>
+  <data name="NotFound" xml:space="preserve">
+    <value>URL tapılmadı.</value>
+  </data>
+  <data name="NotNullValidator" xml:space="preserve">
+    <value>{PropertyName} dəyəri boş olmamalıdır.</value>
+  </data>
+  <data name="NotValid" xml:space="preserve">
+    <value>Dəyər etibarlı deyil</value>
+  </data>
+  <data name="ObjectNotFound" xml:space="preserve">
+    <value>Məlumat tapılmadı</value>
+  </data>
+  <data name="OperationCancelled" xml:space="preserve">
+    <value>Əməliyyat imtina edilmişdir</value>
+  </data>
+  <data name="Permission" xml:space="preserve">
+    <value>Bu əməliyyatı aparmaq üçün icazəniz yoxdur.</value>
+  </data>
+  <data name="PermissionDenied" xml:space="preserve">
+    <value>Bu URL-ə müraciət etmək hüququnuz yoxdur.</value>
+  </data>
+  <data name="PropertyAlreadyExists" xml:space="preserve">
+    <value>Bu ad artıq mövcutdur </value>
+  </data>
+  <data name="PropertyIsNull" xml:space="preserve">
+    <value>Xananın dəyəri boş ola bilməz</value>
+  </data>
+  <data name="RequiredAttribute" xml:space="preserve">
+    <value>Bu xana məcburidir</value>
+  </data>
+  <data name="RowAlreadyExists" xml:space="preserve">
+    <value>Bu sətr artıq mövcutdur</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Uğurla yerinə yetirildi.</value>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>Sessiya vaxtı bitib. Sistemə yenidən daxil olun.</value>
+  </data>
+  <data name="UniqeKeyException" xml:space="preserve">
+    <value>Unikal məlumat xətası</value>
+  </data>
+  <data name="UserAlreadyLoggedIn" xml:space="preserve">
+    <value>Bu istifadəçi artıq qeydiyyatdan keçib.</value>
+  </data>
+  <data name="UserCertificateIsInvalid" xml:space="preserve">
+    <value>İmza sertifikati düzgün deyil.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>İstifadəçi tapılmadı.</value>
+  </data>
+  <data name="ValidationError" xml:space="preserve">
+    <value>Yoxlama xətası baş verdi.</value>
+  </data>
+</root>

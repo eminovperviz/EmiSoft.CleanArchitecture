@@ -1,0 +1,26 @@
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+COPY ["src/EmiSoft.CleanArchitecture.Web/EmiSoft.CleanArchitecture.Web.csproj", "src/EmiSoft.CleanArchitecture.Web/"]
+COPY ["src/EmiSoft.CleanArchitecture.Application/EmiSoft.CleanArchitecture.Application.csproj", "src/EmiSoft.CleanArchitecture.Application/"]
+COPY ["src/EmiSoft.CleanArchitecture.SharedKernel/EmiSoft.CleanArchitecture.SharedKernel.csproj", "src/EmiSoft.CleanArchitecture.SharedKernel/"]
+COPY ["src/EmiSoft.CleanArchitecture.Domain/EmiSoft.CleanArchitecture.Domain.csproj", "src/EmiSoft.CleanArchitecture.Domain/"]
+COPY ["src/EmiSoft.CleanArchitecture.Infrastructure/EmiSoft.CleanArchitecture.Infrastructure.csproj", "src/EmiSoft.CleanArchitecture.Infrastructure/"]
+RUN dotnet restore "src/EmiSoft.CleanArchitecture.Web/EmiSoft.CleanArchitecture.Web.csproj"
+COPY . .
+WORKDIR "/src/src/EmiSoft.CleanArchitecture.Web"
+RUN dotnet build "EmiSoft.CleanArchitecture.Web.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "EmiSoft.CleanArchitecture.Web.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "EmiSoft.CleanArchitecture.Web.dll"]
