@@ -10,8 +10,10 @@ If you like or are using this project to learn or start your solution, please gi
 - [Design Decisions and Dependencies](#design-decisions-and-dependencies)
   * [The Application Project](#the-application-project)
   * [The Domain Project](#the-domain-project)
-  * [The SharedKernel Project](#the-sharedkernel-project)
   * [The Infrastructure Project](#the-infrastructure-project)
+  * [The Infrastructure.Persistence Project](#the-infrastructure.persistence-project)
+  * [The SharedKernel Project](#the-sharedkernel-project)
+  
   * [The Web Project](#the-web-project)  
 
 
