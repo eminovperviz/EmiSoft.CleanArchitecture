@@ -47,7 +47,7 @@ public static class SwaggerInjection
               }
             });
 
-            IncludeXmlComments(Assembly.GetExecutingAssembly().GetName().Name, c);
+            IncludeXmlComments(c);
 
             c.CustomSchemaIds(x => x.FullName);
         });
@@ -55,9 +55,9 @@ public static class SwaggerInjection
         return services;
     }
 
-    private static void IncludeXmlComments(string assemblyName, SwaggerGenOptions c)
+    private static void IncludeXmlComments(SwaggerGenOptions c)
     {
-        string xmlFile = $"{assemblyName}.xml";
+        string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
 
         string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
 
