@@ -21,7 +21,9 @@ If you like or are using this project to learn or start your solution, please gi
  - Onion Architecture
  - Entity Framework Core - Code First
  - Repository Pattern - Generic
- - Serilog
+ - Logging (Serilog)
+ - ElasticSearch
+ - Kibana
  - Swagger UI
  - Healthchecks
  - Pagination      
