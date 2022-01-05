@@ -5,7 +5,7 @@ namespace EmiSoft.CleanArchitecture.SharedKernel.Utility;
 
 public sealed class AesOperation
 {
-    private static string _key = "AAECAwQFBgcICQoLDA0ODw==";
+    private static string _key = "AAAECAwQFFgccIC0QoLA0DA0ODw==";
 
     public static string EncryptString(string plainText)
     {
