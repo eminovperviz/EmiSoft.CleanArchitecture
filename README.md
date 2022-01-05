@@ -19,23 +19,27 @@ If you like or are using this project to learn or start your solution, please gi
 
 ## Features and Technologies
  - Onion Architecture
+ - JWT Identity
  - Entity Framework Core - Code First
- - Repository Pattern - Generic
- - Serilog
+ - Database Seeding
+ - Audit Implementation
+ - AES Encryption & Decryption for identificators
+ - Repository Pattern
  - Swagger UI
+ - API Versioning
  - Healthchecks
  - Pagination      
- - Database Seeding
+ - Global Api Validation Filter
+ - Fluent Validation
  - Globalization
  - Localization
  - FluentValidation Localization
  - Global Api Exception Filter
- - Global Api Validation Filter
- - API Versioning
- - Fluent Validation
- - AutoMapper
- - SMTP / Email Service 
- - Audit Implementation
+ - Logging (Serilog)
+ - ElasticSearch (To Store log and audit's data)
+ - Kibana (Visualization logged data)
+ - AutoMapper (Dynamic)
+ - SMTP / Email Service  
  - Containerization (Docker Support)
  
 ## Versions
