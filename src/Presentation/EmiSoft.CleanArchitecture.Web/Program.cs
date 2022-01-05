@@ -1,3 +1,4 @@
+using EmiSoft.CleanArchitecture.Application.Extensions;
 using EmiSoft.CleanArchitecture.Web.DependencyInjection.Api;
 using EmiSoft.CleanArchitecture.Web.DependencyInjection.Swagger;
 using HealthChecks.UI.Client;
@@ -10,6 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddApiProjectInjection(builder.Configuration);
 builder.Services.AddHealthChecks().AddSqlServer(builder.Configuration["ConnectionStrings:SqlServer"]);
+
+Log.Logger = LoggerExtension.CreateLogger(builder.Configuration);
 
 builder.Host.UseSerilog();
 
