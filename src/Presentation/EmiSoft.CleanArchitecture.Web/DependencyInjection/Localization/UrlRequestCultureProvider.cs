@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Localization;
+﻿using EmiSoft.CleanArchitecture.SharedKernel.Utility;
+using Microsoft.AspNetCore.Localization;
 using System.Text.RegularExpressions;
 
 namespace EmiSoft.CleanArchitecture.Web.DependencyInjection.Localization;
@@ -24,12 +25,12 @@ public class UrlRequestCultureProvider : RequestCultureProvider
         var parts = httpContext.Request.Path.Value.Split('/');
         if (parts.Length < 3)
         {
-            return Task.FromResult<ProviderCultureResult>(null);
+            return Task.FromResult(new ProviderCultureResult(Language.Azerbaijan.Culture));
         }
 
         if (!_localePattern.IsMatch(parts[2]))
         {
-            return Task.FromResult<ProviderCultureResult>(null);
+            return Task.FromResult(new ProviderCultureResult(Language.Azerbaijan.Culture));
         }
 
         var culture = parts[2];
