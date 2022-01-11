@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Localization;
 using System.Globalization;
 
-namespace EmiSoft.CleanArchitecture.Web.DependencyInjection.Localization;
+namespace EmiSoft.CleanArchitecture.Api.DependencyInjection.Localization;
 
 public static class LocalizationInjection
 {

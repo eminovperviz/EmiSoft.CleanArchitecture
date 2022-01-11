@@ -1,7 +1,7 @@
 ﻿using EmiSoft.CleanArchitecture.SharedKernel.Utility;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EmiSoft.CleanArchitecture.Web.Controllers;
+namespace EmiSoft.CleanArchitecture.Api.Controllers;
 
 /// <summary>
 /// Base controller

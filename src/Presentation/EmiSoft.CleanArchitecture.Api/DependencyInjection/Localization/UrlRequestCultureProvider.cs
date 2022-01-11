@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Localization;
 using System.Text.RegularExpressions;
 
-namespace EmiSoft.CleanArchitecture.Web.DependencyInjection.Localization;
+namespace EmiSoft.CleanArchitecture.Api.DependencyInjection.Localization;
 
 public class UrlRequestCultureProvider : RequestCultureProvider
 {

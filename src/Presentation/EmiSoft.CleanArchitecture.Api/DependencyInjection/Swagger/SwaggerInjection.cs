@@ -4,7 +4,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using System.Reflection;
 
-namespace EmiSoft.CleanArchitecture.Web.DependencyInjection.Swagger;
+namespace EmiSoft.CleanArchitecture.Api.DependencyInjection.Swagger;
 
 public static class SwaggerInjection
 {

@@ -1,6 +1,6 @@
 using EmiSoft.CleanArchitecture.Application.Extensions;
-using EmiSoft.CleanArchitecture.Web.DependencyInjection.Api;
-using EmiSoft.CleanArchitecture.Web.DependencyInjection.Swagger;
+using EmiSoft.CleanArchitecture.Api.DependencyInjection.Api;
+using EmiSoft.CleanArchitecture.Api.DependencyInjection.Swagger;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;

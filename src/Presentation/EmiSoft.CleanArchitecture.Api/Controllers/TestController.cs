@@ -1,4 +1,4 @@
-﻿using EmiSoft.CleanArchitecture.Web.Controllers;
+﻿using EmiSoft.CleanArchitecture.Api.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmiSoft.CleanArchitecture.Controllers;

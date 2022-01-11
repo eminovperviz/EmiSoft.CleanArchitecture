@@ -2,14 +2,14 @@
 using EmiSoft.CleanArchitecture.Application.Filters;
 using EmiSoft.CleanArchitecture.Infrastructure;
 using EmiSoft.CleanArchitecture.SharedKernel.Resources;
-using EmiSoft.CleanArchitecture.Web.DependencyInjection.Localization;
-using EmiSoft.CleanArchitecture.Web.DependencyInjection.Swagger;
+using EmiSoft.CleanArchitecture.Api.DependencyInjection.Localization;
+using EmiSoft.CleanArchitecture.Api.DependencyInjection.Swagger;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection;
 using System.Text.Json.Serialization;
 
-namespace EmiSoft.CleanArchitecture.Web.DependencyInjection.Api;
+namespace EmiSoft.CleanArchitecture.Api.DependencyInjection.Api;
 
 public static class ApiProjectInjection
 {
